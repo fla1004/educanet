@@ -3,7 +3,7 @@
 }
 .why-us .content {
   padding: 20px;
-  background: #5f56e4;
+  background: blue;
   border-radius: 4px;
   color: #fff;
 }
@@ -17,7 +17,7 @@
 .why-us .icon-boxes .icon-box i {
   font-size: 32px;
   padding: 18px;
-  color: #5f56e4;
+  color: blue;
   margin-bottom: 30px;
   background: #ecf9f0;
   border-radius: 50px;
@@ -29,4 +29,10 @@
   color: #fff;
   border-radius: 50px;
   transition: all ease-in-out 0.4s;
+}
+.why-us .content h3 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 34px;
+  margin-bottom: 30px;
 }

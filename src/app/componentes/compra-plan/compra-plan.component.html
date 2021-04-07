@@ -1,0 +1,68 @@
+<main>
+   
+    <h1>FORMULARIO DE REGISTRO.</h1>
+
+  <div class="container">
+
+     <h3>1. Datos personales. </h3>
+    <form (ngSubmit)="onSubmit()" class="php-email-form">
+      <label>Nombre Completo:</label>
+      <input  placeholder="Nombre completo"  
+              class="form-control"  
+              [formControl]="nombre" required
+              [(ngModel)]="datosPlanModel.nombre"/> <br>
+
+      <label for="lname">Cedula de identidad:</label>
+      <input  placeholder="CI"  
+              class="form-control"
+              [formControl]="ci" required
+              [(ngModel)]="datosPlanModel.ci"/> <br>
+
+
+      <label for="lname">Correo:</label>
+      <input class="form-control" 
+            placeholder="pat@gmail.com" 
+            [formControl]="email" required
+            [(ngModel)]="datosPlanModel.correo"/>
+
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error><br>
+
+      <label for="lname">Telefono:</label>
+      <input class="form-control" 
+              placeholder="Telefono" 
+      
+              pattern="[0-9]{9}"
+              [formControl]="telefono" required
+              [(ngModel)]="datosPlanModel.telefono"/><br>
+
+
+      <label>Membresía:</label>
+      <select class="form-control"
+          name="membresia"
+          [(ngModel)]="datosPlanModel.membresia">
+            <option value="Membresia A anual">Membresia A Anual.</option>
+            <option value="Membresia A semestral">Membresia A Semestral.</option>
+            <option value="Membresia B trimestral">Membresia B trimestral.</option>
+            <option value="Membresia C ">Membresia C.</option>
+      </select><br>
+
+    <h3>2. Métodos de pago.</h3>
+
+    <div class="pago">
+      <input type="radio" id="pago" name="pago" checked="checked">
+      <label for="age1">Transferencia bancaria</label><br>
+
+      <p>Realiza tu pago directamente en nuestra cuenta bancaria y envianos el comprobante <a href="http://bit.ly/Whatsapp-EDUCAnet"> nuestro numero</a>. Tu pedido no se procesará hasta que se haya recibido el importe en nuestra cuenta.</p>
+
+      <img  src="../../../assets/img/numero de cuenta.jpg" alt="">
+
+    </div>
+
+    <hr>
+    
+    <label>Tus datos personales se utilizarán para procesar tu pedido.</label> <br>
+    <input type="submit" value="REALIZAR EL PEDIDO"> 
+    
+    </form>
+  </div>
+</main>

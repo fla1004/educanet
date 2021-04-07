@@ -1,10 +1,36 @@
-footer{
-    background: rgba(0,0,0,0.5);
-}
+#footer {
+    color: #eef0ef;
+    font-size: 14px;
+    background:#7c807d ;
+  }
+  
+  #footer .footer-top {
+    padding: 60px 0 0 0;
+    background: #656665;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  
+  #footer .footer-top .footer-contact h3 {
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+  
 #footer .social-links a {
-    font-size: 18px;
+    font-size: 50px;
     display: inline-block;
-    background: #5f56e4;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -14,59 +40,100 @@ footer{
     width: 36px;
     height: 36px;
     transition: 0.3s;
+  }
+  a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
 }
-.container.d-md-flex.py-4 {
-    justify-content: center;
-    letter-spacing: 2px;
-}
-.det_servicios {
-
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    padding: 25px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    
+  #footer .footer-newsletter {
+    font-size: 25px;
   }
 
-.log{
-padding-top: initial;
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding-left: 50px;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: white;
+    font-size: 15px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: blue;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: darkblue;
+  }
+
+  #footer .social-links a:hover {
+    background: darkblue;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+/*--------------------------------------------------------------------------------------------
+                                I F R A M E 
+------------------------------------------------------------------------------------------------*/
+iframe{
+    width: 500px;
+    height: 200px;
 }
+
+
+/*--------------------------------------------------------------------------------------------
+                                I M A G E N E S 
+------------------------------------------------------------------------------------------------*/
 img{
-    width: 200px;
+    width: 250px;
 }
 
-.titulo{
-    font-size: x-large;
-    color: white;
-}
-
-.container.d-md-flex.py-4[_ngcontent-ony-c20] {
-    justify-content: center;
-    letter-spacing: 5px;
-}
-i{
-    font-size: xx-large;
-    color: white;
-    padding: 5px;
-}
-i.fas.fa-mobile-alt, i.far.fa-envelope{
-    font-size: larger;
-}
-i.fab.fa-twitter {
-    font-size: xx-large;
-}
-.info-lug{
-    width: 100%;
-    color: white;
-}
-p{
-    color: white;
-}
 
 @media (max-width: 500px){
+
+    img{
+        width: 100%;
+    }
+    p{
+        padding: 10px;
+        text-align: center;
+    }
+
+    iframe{
+        width: 350px;
+        height: 200px;
+
+        margin-bottom: 20px;
+    }
     .det_servicios {
         margin: 20px 30px;
         padding: 25px;
@@ -86,6 +153,17 @@ p{
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
       }
+
+      iframe{
+      
+        margin-bottom: 20px;
+    }
+
+    .social-links{
+        margin-bottom: 10px;
+    }
+
+    
 
       .container.d-md-flex.py-4[_ngcontent-ony-c20] {
        padding-top: 0;

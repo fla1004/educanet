@@ -1,0 +1,221 @@
+main{
+    background-color: rgba(192, 192, 192, 0.5);
+}
+
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.news-cards {
+    display: grid;
+    /*4 columnas*/
+    grid-template-columns: repeat(4, 1fr); /*1fr 1fr 1fr 1fr;*/
+    /*Espaciado interno*/
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.news-cards2 {
+    display: grid;
+    /*4 columnas*/
+    grid-template-columns: repeat(2, 1fr); /*1fr 1fr 1fr 1fr;*/
+    /*Espaciado interno*/
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.list-color{
+    background-color: white;
+}
+  
+.datos-cursos{
+    border: 1px solid black;
+}
+/*----------------------------------------------------------------------------------
+                    Lista
+------------------------------------------------------------------------------------*/
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    
+    margin-bottom: 0;
+}
+
+li:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+/*----------------------------------------------------------------------------------
+                    Letras
+------------------------------------------------------------------------------------*/
+
+.section-title label {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #37423b;
+    text-align: center;
+}
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3e3e41;
+    font-family: "Poppins", sans-serif;
+}
+.section-title span::after , span::before{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: blue;
+    margin: 4px 10px;
+}
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 0px;
+}
+
+.lett{
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+p{
+    background-color: cornflowerblue;
+    margin: 0;
+}
+
+.ciencias{
+    background-color:lightgreen;
+    text-align: center;
+}
+
+li {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #777777;
+}
+/*----------------------------------------------------------------------------------
+                    Iconos
+------------------------------------------------------------------------------------*/
+
+i{
+    color: blue;
+}
+
+/*----------------------------------------------------------------------------------
+                    Imagenes
+------------------------------------------------------------------------------------*/
+img{
+    width: 200px;
+}
+
+
+@media (max-width: 500px) {
+
+    img{
+        width: 400px;
+    }
+    .news-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-title h2 {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        line-height: 15px;
+    
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #3e3e41;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+    .section-title span::after , span::before{
+        content: "";
+        width: 100%;
+        line-height: 1px;
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .news-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    img{
+        width: 50%;
+    }
+
+    .section-title h2 {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        line-height: 25px;
+    
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #3e3e41;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+    .section-title span::after , span::before{
+        content: "";
+        width: 100%;
+        line-height: 1px;
+        display: inline-block;
+        margin: 0;
+    }    
+}
+
+@media (max-width: 1080px){
+    img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .section-title label{
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #3e3e41;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+    
+    .section-title span::after , span::before{
+        content: "";
+        /*width: 40px;*/
+        height: 1px;
+        display: inline-block;
+        background: blue;
+        margin: 4px 4px;
+    }
+}
+  

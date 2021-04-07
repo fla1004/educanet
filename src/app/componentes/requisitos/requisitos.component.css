@@ -1,0 +1,62 @@
+.about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: blue;
+}
+
+.about .content h3 {
+    padding-top: 60px;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+  }
+
+
+.about .content ul {
+    list-style: none;
+    padding-top: 30px;
+    padding-left: 120px;
+}
+
+.about .content ul li {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.about .content ul i {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 4px;
+    color: white;
+}
+ 
+span {
+    color: #bababa;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+  /*---------------------------------------------------------------------------------
+                            I M A G E N E S 
+  -----------------------------------------------------------------------------------*/
+
+  img{
+      height: 382px;
+  }
+  
+  @media (max-width: 768px) {
+    .about .content .learn-more-btn {
+      margin: 0 48px 0 0;
+      padding: 6px 18px;
+    }
+    .about .content ul {
+      list-style: none;
+      padding-top: 30px;
+      padding-left: 30px;
+  }
+  }
+  
+  
